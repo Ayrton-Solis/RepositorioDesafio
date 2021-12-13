@@ -1,0 +1,106 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+html{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Estonia', cursive;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Readex Pro', sans-serif;
+}
+header{
+    padding: 1em;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-evenly;
+}
+.link{
+    text-decoration: none;
+}
+section{
+    padding: 50px;
+    background: aliceblue;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content 10em;
+    row-gap: 5em;
+    text-align: center;
+}
+section div img{
+    width: 300px;
+}
+.categorias{
+    display: grid;
+    grid-column: 1/3;
+    grid-template-rows: max-content 5em;
+}
+.categorias-hijo{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen  and (max-width: 620px) {
+    header{
+        background-color: chartreuse;
+        font-size: small;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    section div img {
+        width: 250px;
+    }
+    footer{
+        background-color: chartreuse;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        background-color: brown;
+        flex-direction: column;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        background-color: brown;
+    }
+}
+@media screen and (max-width: 320px) {
+    header{
+        background-color: darkslateblue;
+        font-size: x-small;
+        display: flex;
+        flex-direction: column;
+    }
+    section{
+        font-size: small;
+        display: flex;
+        flex-direction: column;
+    }
+    section div img{
+        width: 100px;
+    }
+    section .categorias .categorias-hijo{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+    footer{
+        background-color: darkslateblue;
+        font-size: x-small;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
