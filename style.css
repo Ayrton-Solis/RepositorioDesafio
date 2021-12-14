@@ -16,6 +16,20 @@ header{
     display: flex;
     justify-content: space-evenly;
 }
+header h1{
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: opacar;
+    animation-iteration-count: inherit;
+}
+@keyframes opacar {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 .link{
     text-decoration: none;
 }
@@ -30,6 +44,7 @@ section{
 }
 section div img{
     width: 300px;
+    border: 1px solid black;
 }
 .categorias{
     display: grid;
