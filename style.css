@@ -31,7 +31,7 @@ header h1{
     }
 }
 .link{
-    text-decoration: none;
+    text-decoration: black;
 }
 section{
     padding: 50px;
@@ -54,6 +54,49 @@ section div img{
 .categorias-hijo{
     display: flex;
     justify-content: space-evenly;
+}
+.input-uno{
+    width: 75px;
+    height: 30px;
+    transition: all 2s;
+}
+.input-uno:hover{
+    background-color: royalblue;
+    width: 100px;
+    height: 50px;
+}
+.input-dos{
+    width: 75px;
+    height: 30px;
+    transition: all 2s;
+}
+.input-dos:hover{
+    background-color: royalblue;
+    width: 100px;
+    height: 50px;
+}
+.input-tres{
+    width: 75px;
+    height: 30px;
+    transition: all 2s;
+}
+.input-tres:hover{
+    background-color: royalblue;
+    width: 100px;
+    height: 50px;
+}
+.opinion{
+    display: flex;
+    justify-content: center;
+}
+section textarea{
+    width: 300px;
+    height: 20px;
+    transition: all 2s;
+}
+section textarea:focus{
+    width: 500px;
+    height: 100px;
 }
 footer{
     background-color: aquamarine;
